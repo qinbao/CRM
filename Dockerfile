@@ -5,7 +5,7 @@ FROM centos
 #MAINTAINER 维护者信息
 MAINTAINER hh Wang 
 #ADD
-ADD pcre-8.38.tar.gz /usr/local/srcADD nginx-1.9.3.tar.gz /usr/local/src
+ADD  nginx-1.9.3.tar.gz /usr/local/src
 #RUN
 RUN yum -y install wget gcc gcc-c++ make openssl openssl-devel
 RUN useradd -s /sbin/nologin -M www 
