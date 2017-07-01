@@ -1,20 +1,18 @@
-#This is My first Dockerfile#version 1.0
-#Author: hh 
-#Base image 基础镜像
-FROM centos
-#MAINTAINER 维护者信息
-MAINTAINER hh Wang 
-#ADD
-ADD  nginx-1.9.3.tar.gz /usr/local/src
-#RUN
-RUN yum -y install wget gcc gcc-c++ make openssl openssl-devel
-RUN useradd -s /sbin/nologin -M www 
-#WORKDIR
-WORKDIR /usr/local/src/nginx-1.9.3 
-RUN ./configure --prefix=/usr/local/nginx --user=www --group=www --with-http_ssl_module --with-http_stub_status_module \
---with-pcre=/usr/local/src/pcre-8.38 && make && make install
-RUN echo "daemon off;">>/usr/local/nginx/conf/nginx.conf 
-#ENV定义环境变量
-ENV PATH /usr/local/nginx/sbin:$PATH 
-#EXPOSE 映射端口
-EXPOSE 80 CMD ["nginx"]
+# Using a compact OS
+FROM alpine:latest
+
+MAINTAINER Golfen Guo <golfen.guo@daocloud.io>
+
+# Install and configure Nginx
+RUN apk --update add nginx
+RUN sed -i "s#root   html;#root   /usr/share/nginx/html;#g" /etc/nginx/nginx.conf
+RUN ln -sf /dev/stdout /var/log/nginx/access.log \
+	&& ln -sf /dev/stderr /var/log/nginx/error.log
+
+# Add 2048 stuff into Nginx server
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
+
+# Start Nginx and keep it running background and start php
+CMD sed -i "s/ContainerID: /ContainerID: "$(hostname)"/g" /usr/share/nginx/html/index.html && nginx -g "pid /tmp/nginx.pid; daemon off;"
