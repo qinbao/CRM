@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/art_template.js"></script>
+    <script src="js/paging.js"></script>
+    <script src="js/build.js"></script>
+    <title>欢迎使用CRM管理系统</title>
+</head>
+<body>
+<!--top-->
+<header><p>欢迎使用CRM管理系统</p></header>
+<!--content-->
+<section class="main">
+    <div class="menuTree" id="menuTree"></div>
+    <div class="content">
+        <div class="widget_table" id="content">
+        <!--此处插入表格内容-->
+
+        </div>
+    </div>
+</section>
+<script type="template" id="trainTem">
+    <ul class="widget_row">
+        <li>全选<input  type="checkbox" name="allChecked" class="allChecked" onclick="crm.DoCheck()"></li>
+        <li class="w50">序号</li>
+        <li class="w150">车次</li>
+        <li class="setName">始发站</li>
+        <li>时间</li>
+        <li>中转站</li>
+        <li class="c69cde createTime w150" data-state="-1">到达时间</li>
+        <li class="c169cde usedCount" data-state="">终点站</li>
+        <li>价格</li>
+    </ul>
+    {{each dataArr}}
+    <ul class="widget_row">
+        <li><input type="checkbox" name="choose"></li>
+        <li class="w50">{{$index+1}}</li>
+        <li class="canselect">{{$value.train_code}}</li>
+        <li class="canselect">{{$value.start_station_name}}</li>
+        <li class="canselect">{{$value.start_time}}</li>
+        <li class="canselect">{{$value.to_station_name}}</li>
+        <li class="canselect">{{$value.arrive_time}}</li>
+        <li class="canselect">{{$value.end_station_name}}</li>
+        <li class="canselect">{{$value.edz_price}}</li>
+    </ul>
+    {{/each}}
+</script>
+<script type="template" id="foodTem">
+    <ul class="widget_row">
+        <li>全选<input  type="checkbox" name="allChecked" class="allChecked" onclick="crm.DoCheck()"></li>
+        <li class="w50">序号</li>
+        <li class="w150">店名</li>
+        <li class="setName">所在市</li>
+        <li>所在县</li>
+        <li>标签</li>
+        <li class="c69cde createTime w150" data-state="-1">具体地址</li>
+        <li class="c169cde usedCount" data-state="">价格</li>
+        <li>联系电话</li>
+    </ul>
+    {{each dataArr}}
+    <ul class="widget_row">
+        <li><input type="checkbox" name="choose"></li>
+        <li class="w50">{{$index+1}}</li>
+        <li class="canselect">{{$value.name}}</li>
+        <li class="canselect">{{$value.city}}</li>
+        <li class="canselect">{{$value.area}}</li>
+        <li class="canselect">{{$value.tags}}</li>
+        <li class="canselect">{{$value.address}}</li>
+        <li class="canselect">{{$value.avg_price}}</li>
+        <li class="canselect">{{$value.phone}}</li>
+    </ul>
+    {{/each}}
+</script>
+<script type="template" id="tvTem">
+    <ul class="widget_row">
+        <li>全选<input  type="checkbox" name="allChecked" class="allChecked" onclick="crm.DoCheck()"></li>
+        <li class="w50">序号</li>
+        <li class="w150">视频分类</li>
+        <li class="setName">播放时长</li>
+        <li>语言</li>
+        <li>标题</li>
+        <li class="c69cde createTime w150" data-state="-1">国家</li>
+        <li class="c169cde usedCount" data-state="">发布时间</li>
+        <li>作家</li>
+    </ul>
+    {{each dataArr}}
+    <ul class="widget_row">
+        <li><input type="checkbox" name="choose"></li>
+        <li class="w50">{{$index+1}}</li>
+        <li class="canselect">{{$value.genres}}</li>
+        <li class="canselect">{{$value.runtime}}</li>
+        <li class="canselect">{{$value.language}}</li>
+        <li class="canselect">{{$value.title}}</li>
+        <li class="canselect">{{$value.country}}</li>
+        <li class="canselect">{{$value.release_date}}</li>
+        <li class="canselect">{{$value.writers}}</li>
+    </ul>
+    {{/each}}
+</script>
+<script type="template" id="sportsTem">
+    <ul class="widget_row">
+        <li>全选<input  type="checkbox" name="allChecked" class="allChecked" onclick="crm.DoCheck()"></li>
+        <li class="w50">序号</li>
+        <li class="w150">比赛类型</li>
+        <li class="setName">城市</li>
+        <li>地址</li>
+        <li>标题</li>
+        <li class="c69cde createTime w150" data-state="-1">演出时间</li>
+        <li class="c169cde usedCount" data-state="">图片地址</li>
+        <li>联系电话</li>
+    </ul>
+    {{each dataArr}}
+    <ul class="widget_row">
+        <li><input type="checkbox" name="choose"></li>
+        <li class="w50">{{$index+1}}</li>
+        <li class="canselect">{{$value.venues_type}}</li>
+        <li class="canselect">{{$value.province}}</li>
+        <li class="canselect">{{$value.address}}</li>
+        <li class="canselect">{{$value.name}}</li>
+        <li class="canselect">{{$value.shop_hours}}</li>
+        <li class="canselect"><img src="{{$value.image}}" alt=""></li>
+        <li class="canselect">{{$value.phone}}</li>
+    </ul>
+    {{/each}}
+</script>
+<script type="template" id="pagingTem">
+    <!--分页-->
+    <div class="clearfix p028">
+        <ul class="paging" id="paging">
+            <li class="prev" id="firstPage">首页</li>
+            <li class="cur">1</li>
+            <li class="next" id="nextPage">下一页</li>
+            <li class="next" id="lastPage">尾页</li>
+        </ul>
+        <span class="allPaging">共<em></em>条记录</span>
+    </div>
+</script>
+</body>
+</html>

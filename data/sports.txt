@@ -1,0 +1,157 @@
+{
+    "reason": "success",
+    "result": [
+        {
+            "venues_type": "篮球",
+            "province": "北京市",
+            "city": "北京市",
+            "name": "宏远篮球（东大桥店）",
+            "address": "北京朝阳区东大桥陈经纶体育馆(蓝岛大厦南侧)",
+            "phone": "",
+            "image": "http://i1.s1.dpfile.com/pc/90d725b0e9be981d137eb904afb8dc3b(700x700)/thumb.jpg",
+            "shop_hours": ""
+        },
+        {
+            "venues_type": "篮球",
+            "province": "北京市",
+            "city": "北京市",
+            "name": "工体篮球公园",
+            "address": "北京市工人体育场东路甲2-1号",
+            "phone": "010-65523096",
+            "image": "http://hiphotos.baidu.com/lbsugc/pic/item/50da81cb39dbb6fde434cfa40f24ab18962b37c0.jpg",
+            "shop_hours": ""
+        },
+        {
+            "venues_type": "篮球",
+            "province": "北京市",
+            "city": "北京市",
+            "name": "康美智盛",
+            "address": "工人体育场北门工体篮球公园",
+            "phone": "15810311901",
+            "image": "",
+            "shop_hours": ""
+        },
+        {
+            "venues_type": "篮球",
+            "province": "北京市",
+            "city": "北京市",
+            "name": "梦想之巅篮球俱乐部(朝阳门店)",
+            "address": "朝阳区朝阳门外大街8号蓝岛大厦内(近东大桥)",
+            "phone": "(010)62164313",
+            "image": "http://i3.s1.dpfile.com/pc/d774faf02b93d7f617094eee1b61e339(700c700)/thumb.jpg",
+            "shop_hours": "周六周日16:00-18:00"
+        },
+        {
+            "venues_type": "篮球",
+            "province": "北京市",
+            "city": "北京市",
+            "name": "贡院六号篮球场",
+            "address": "东城区东城建国门内大街贡院6号",
+            "phone": "(010)65176666,(010)81956205",
+            "image": "http://i2.s1.dpfile.com/pc/dfb4e4836ea300deda5b7cfff3d56da1(700c700)/thumb.jpg",
+            "shop_hours": ""
+        },
+        {
+                    "venues_type": "篮球",
+                    "province": "北京市",
+                    "city": "北京市",
+                    "name": "宏远篮球（东大桥店）",
+                    "address": "北京朝阳区东大桥陈经纶体育馆(蓝岛大厦南侧)",
+                    "phone": "",
+                    "image": "http://i1.s1.dpfile.com/pc/90d725b0e9be981d137eb904afb8dc3b(700x700)/thumb.jpg",
+                    "shop_hours": ""
+                },
+                {
+                    "venues_type": "篮球",
+                    "province": "北京市",
+                    "city": "北京市",
+                    "name": "工体篮球公园",
+                    "address": "北京市工人体育场东路甲2-1号",
+                    "phone": "010-65523096",
+                    "image": "http://hiphotos.baidu.com/lbsugc/pic/item/50da81cb39dbb6fde434cfa40f24ab18962b37c0.jpg",
+                    "shop_hours": ""
+                },
+                {
+                    "venues_type": "篮球",
+                    "province": "北京市",
+                    "city": "北京市",
+                    "name": "康美智盛",
+                    "address": "工人体育场北门工体篮球公园",
+                    "phone": "15810311901",
+                    "image": "",
+                    "shop_hours": ""
+                },
+                {
+                    "venues_type": "篮球",
+                    "province": "北京市",
+                    "city": "北京市",
+                    "name": "梦想之巅篮球俱乐部(朝阳门店)",
+                    "address": "朝阳区朝阳门外大街8号蓝岛大厦内(近东大桥)",
+                    "phone": "(010)62164313",
+                    "image": "http://i3.s1.dpfile.com/pc/d774faf02b93d7f617094eee1b61e339(700c700)/thumb.jpg",
+                    "shop_hours": "周六周日16:00-18:00"
+                },
+                {
+                    "venues_type": "篮球",
+                    "province": "北京市",
+                    "city": "北京市",
+                    "name": "贡院六号篮球场",
+                    "address": "东城区东城建国门内大街贡院6号",
+                    "phone": "(010)65176666,(010)81956205",
+                    "image": "http://i2.s1.dpfile.com/pc/dfb4e4836ea300deda5b7cfff3d56da1(700c700)/thumb.jpg",
+                    "shop_hours": ""
+                },
+                 {
+                                    "venues_type": "篮球",
+                                    "province": "北京市",
+                                    "city": "北京市",
+                                    "name": "宏远篮球（东大桥店）",
+                                    "address": "北京朝阳区东大桥陈经纶体育馆(蓝岛大厦南侧)",
+                                    "phone": "",
+                                    "image": "http://i1.s1.dpfile.com/pc/90d725b0e9be981d137eb904afb8dc3b(700x700)/thumb.jpg",
+                                    "shop_hours": ""
+                                },
+                                {
+                                    "venues_type": "篮球",
+                                    "province": "北京市",
+                                    "city": "北京市",
+                                    "name": "工体篮球公园",
+                                    "address": "北京市工人体育场东路甲2-1号",
+                                    "phone": "010-65523096",
+                                    "image": "http://hiphotos.baidu.com/lbsugc/pic/item/50da81cb39dbb6fde434cfa40f24ab18962b37c0.jpg",
+                                    "shop_hours": ""
+                                },
+                                {
+                                    "venues_type": "篮球",
+                                    "province": "北京市",
+                                    "city": "北京市",
+                                    "name": "康美智盛",
+                                    "address": "工人体育场北门工体篮球公园",
+                                    "phone": "15810311901",
+                                    "image": "",
+                                    "shop_hours": ""
+                                },
+                                {
+                                    "venues_type": "篮球",
+                                    "province": "北京市",
+                                    "city": "北京市",
+                                    "name": "梦想之巅篮球俱乐部(朝阳门店)",
+                                    "address": "朝阳区朝阳门外大街8号蓝岛大厦内(近东大桥)",
+                                    "phone": "(010)62164313",
+                                    "image": "http://i3.s1.dpfile.com/pc/d774faf02b93d7f617094eee1b61e339(700c700)/thumb.jpg",
+                                    "shop_hours": "周六周日16:00-18:00"
+                                },
+                                {
+                                    "venues_type": "篮球",
+                                    "province": "北京市",
+                                    "city": "北京市",
+                                    "name": "贡院六号篮球场",
+                                    "address": "东城区东城建国门内大街贡院6号",
+                                    "phone": "(010)65176666,(010)81956205",
+                                    "image": "http://i2.s1.dpfile.com/pc/dfb4e4836ea300deda5b7cfff3d56da1(700c700)/thumb.jpg",
+                                    "shop_hours": ""
+                                }
+
+    ],
+    "error_code": 0
+}
