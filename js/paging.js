@@ -2,6 +2,7 @@
  * 分页器
  * @param {number} nowPage 当前页数
  * @param {number} pageNum 总页数
+ 
  */
  function paging(nowPage, pageNum , obj) {
     nowPage = (typeof nowPage == 'number') ? nowPage : parseInt(nowPage);
